@@ -585,3 +585,18 @@ concurrently — everything needed for local development, including the queue wo
 ## 📚 API Documentation
 
 * **Live API Docs:** [Alumni Network API Documentation](https://nity0i8ngr.apidog.io)
+
+---
+
+## 🙋 My contribution (Hasan Dayoub)
+
+This repository is my fork of the team project [khederAlkhateeb/Alumni-Network](https://github.com/khederAlkhateeb/Alumni-Network). I worked on the `hasan` branch and the feature branches `hasan-feat-events`, `hasan-feat-notifications`, `hasan-feat-managementpassword` and `hasan-feat-testing`.
+
+Merged pull requests in the team repository: [#9](https://github.com/khederAlkhateeb/Alumni-Network/pull/9), [#29](https://github.com/khederAlkhateeb/Alumni-Network/pull/29), [#40](https://github.com/khederAlkhateeb/Alumni-Network/pull/40), [#45](https://github.com/khederAlkhateeb/Alumni-Network/pull/45), [#55](https://github.com/khederAlkhateeb/Alumni-Network/pull/55), [#56](https://github.com/khederAlkhateeb/Alumni-Network/pull/56).
+
+Modules I built:
+
+- **University events:** CRUD, registration and attendance (`Event`, `EventRegistration`, `EventBuilder`, `EventPolicy`), plus event reminders (`EventReminderNotification` and a scheduled console command)
+- **Notifications management:** endpoints, queued job and actions
+- **Password management:** password reset and change password
+- **Tests:** `NotificationManagementTest`, `EventRoutesTest` and `PasswordManagementTest` (Pest feature tests)
