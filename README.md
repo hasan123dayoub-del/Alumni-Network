@@ -1,5 +1,7 @@
 # 🎓 Alumni Network — API V1
 
+[![tests](https://github.com/hasan123dayoub-del/Alumni-Network/actions/workflows/tests.yml/badge.svg)](https://github.com/hasan123dayoub-del/Alumni-Network/actions/workflows/tests.yml)
+
 <p align="center">
   <img src="https://img.shields.io/badge/PHP-%3E%3D8.5-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP Version">
   <img src="https://img.shields.io/badge/Laravel-13.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel Version">
