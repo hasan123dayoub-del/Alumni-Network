@@ -50,6 +50,8 @@ class DatabaseSeeder extends Seeder
             UserRoleSeeder::class,
             GraduationRequestSeeder::class,
 
+            // Fixed accounts and data for the public demo.
+            DemoAccountsSeeder::class,
         ]);
     }
 }

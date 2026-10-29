@@ -23,7 +23,10 @@ class LoginUserRequest extends FormRequest
     public function rules(): array
     {
         return [
+            // The @example values pre-fill the login request in the API docs with a demo account.
+            /** @example student@alumni.demo */
             'email' => ['required', 'string', 'email', 'max:255', 'exists:users,email'],
+            /** @example password */
             'password' => ['required', 'string', 'min:8'],
         ];
     }

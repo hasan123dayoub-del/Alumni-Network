@@ -75,6 +75,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // The interactive API docs (/docs/api) are public so anyone can try the demo.
+        Gate::define('viewApiDocs', fn ($user = null) => true);
+
         // Registers short aliases ('post', 'comment') for polymorphic
         // relations, so that `reactable_type` is stored as a clean short
         // string in the database instead of the full class name

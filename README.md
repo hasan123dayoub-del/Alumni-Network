@@ -600,3 +600,12 @@ Modules I built:
 - **Notifications management:** endpoints, queued job and actions
 - **Password management:** password reset and change password
 - **Tests:** `NotificationManagementTest`, `EventRoutesTest` and `PasswordManagementTest` (Pest feature tests)
+
+## 🌐 Live demo
+
+**API base URL:** (added after the first Render deploy)
+
+- **Interactive API docs:** open `/docs/api` on the live server to try every endpoint in the browser (generated from the code with [Scramble](https://scramble.dedoc.co)). Log in, paste the token as the Bearer token, and send requests.
+- Demo accounts (password `password` for all): student `student@alumni.demo`, alumni `alumni@alumni.demo`, university admin `uniadmin@alumni.demo` (Northbridge University, id 1), super admin `admin@alumni.demo`.
+- Try my modules: list events with `GET /api/v1/universities/1/events`, register for one, record attendance as the university admin for "Northbridge Hackathon Week" (it is running in the demo), then check `GET /api/v1/notifications`.
+- Hosted on Render's free tier with SQLite: the first request after a period of inactivity can take about a minute, and the demo data resets on every restart. Real-time Pusher delivery and emails are turned off in the demo.
