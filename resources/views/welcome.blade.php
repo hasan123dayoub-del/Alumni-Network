@@ -85,7 +85,7 @@
         <div class="card"><b>Tests</b>Pest feature tests for the events, notifications and password features.</div>
     </div>
 
-    <p class="note">Free hosting: the server sleeps when idle, so the first request can take up to a minute. The demo database is reset on every restart, and real-time Pusher delivery and emails are turned off in this demo.</p>
+    <p class="note">Hosted on Vercel with a PostgreSQL database. The demo data is reset every night, and real-time Pusher delivery and emails are turned off in this demo.</p>
 
     <footer>Deployed by <a href="https://hasan123dayoub-del.github.io/portfolio/">Hasan Dayoub</a>. The rest of the API was built by the team.</footer>
 </main>

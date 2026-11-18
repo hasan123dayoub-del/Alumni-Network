@@ -63,8 +63,9 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             SecureFileStorageInterface::class,
             function ($app) {
+                // SECURE_UPLOADS_PATH lets read-only hosts (Vercel) keep uploads in /tmp
                 return new SecureFileStorageService(
-                    storage_path('app/secure-uploads')
+                    env('SECURE_UPLOADS_PATH', storage_path('app/secure-uploads'))
                 );
             }
         );

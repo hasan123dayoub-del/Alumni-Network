@@ -58,10 +58,19 @@ return [
             'ignore_exceptions' => false,
         ],
 
+        // LOG_SINGLE_PATH / LOG_PERFORMANCE_PATH let read-only hosts (Vercel) log to php://stderr.
         'single' => [
             'driver' => 'single',
-            'path' => storage_path('logs/laravel.log'),
+            'path' => env('LOG_SINGLE_PATH', storage_path('logs/laravel.log')),
             'level' => env('LOG_LEVEL', 'debug'),
+            'replace_placeholders' => true,
+        ],
+
+        // Slow-request log written by ApiPerformanceLogger
+        'performance' => [
+            'driver' => 'single',
+            'path' => env('LOG_PERFORMANCE_PATH', storage_path('logs/performance.log')),
+            'level' => 'info',
             'replace_placeholders' => true,
         ],
 

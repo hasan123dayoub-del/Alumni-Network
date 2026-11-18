@@ -605,9 +605,9 @@ Modules I built:
 
 ## 🌐 Live demo
 
-**API base URL:** https://alumni-network-api-08ia.onrender.com
+**API base URL:** https://alumni-network-hasan.vercel.app
 
-- **Interactive API docs:** https://alumni-network-api-08ia.onrender.com/docs/api, to try every endpoint in the browser (generated from the code with [Scramble](https://scramble.dedoc.co)). Log in, paste the token as the Bearer token, and send requests.
+- **Interactive API docs:** https://alumni-network-hasan.vercel.app/docs/api, to try every endpoint in the browser (generated from the code with [Scramble](https://scramble.dedoc.co)). Log in, paste the token as the Bearer token, and send requests.
 - Demo accounts (password `password` for all): student `student@alumni.demo`, alumni `alumni@alumni.demo`, university admin `uniadmin@alumni.demo` (Northbridge University, id 1), super admin `admin@alumni.demo`.
 - Try my modules: list events with `GET /api/v1/universities/1/events`, register for one, record attendance as the university admin for "Northbridge Hackathon Week" (it is running in the demo), then check `GET /api/v1/notifications`.
-- Hosted on Render's free tier with SQLite: the first request after a period of inactivity can take about a minute, and the demo data resets on every restart. Real-time Pusher delivery and emails are turned off in the demo.
+- Hosted on Vercel (PHP runtime) with a Neon PostgreSQL database in Frankfurt. The demo data is reset on every deploy and every night. Real-time Pusher delivery and emails are turned off in the demo.
